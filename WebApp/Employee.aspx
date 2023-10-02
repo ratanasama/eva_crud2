@@ -20,6 +20,9 @@
 <body>
     <form id="form1" runat="server">
         <h2 style="color: #0000FF">Employee Form</h2>
+        <td>
+    <asp:Button ID="Button_DataGrid" runat="server" OnClick="Button_DataGrid_Click" Text="Halaman Data" CssClass="newStyle2" style="height: 45px"/>
+</td>
     <div>
         <table>
             <tr>

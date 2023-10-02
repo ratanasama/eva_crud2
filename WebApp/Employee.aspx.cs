@@ -187,7 +187,8 @@ namespace WebApp
         {
             conn.Open();
             int Id = Int32.Parse(e.CommandArgument.ToString());
-            string query = "delete from Tbl_EMPLOYEE_EVA where IDKaryawan='" + Id+"'";
+            string Id_convert = Id.ToString();
+            string query = "delete from Tbl_EMPLOYEE_EVA where IDKaryawan='" + Id_convert+ "'";
             SqlCommand command = new SqlCommand(query, conn);
             command.ExecuteNonQuery();
             conn.Close();
@@ -238,9 +239,9 @@ namespace WebApp
         protected void calDateTime_SelectionChanged(object sender, EventArgs e)
         {
             //txtDateTime.Text = calDateTime.SelectedDate.ToString("yyyy-MM-dd HH:mm:ss");
-            txtDateTime.Text = calDateTime.SelectedDate.ToString("yyyy-MM-dd");
+            //txtDateTime.Text = calDateTime.SelectedDate.ToString("yyyy-MM-dd");
             //txtDateTime.Text = calDateTime.SelectedDate.ToString("dd/MM/yyyy HH:mm:ss");
-            //txtDateTime.Text = calDateTime.SelectedDate.ToString("dd/MM/yyyy");
+            txtDateTime.Text = calDateTime.SelectedDate.ToString("dd/MM/yyyy");
         }
 
         protected void ddlMonth_SelectedIndexChanged(object sender, EventArgs e)
@@ -252,6 +253,16 @@ namespace WebApp
         {
             string selectedText = ddlYear.Text;
             txtDateTime.Text = selectedText;
+        }
+
+        protected void btn(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button_DataGrid_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Employee_DataGrid.aspx");
         }
     }
 }

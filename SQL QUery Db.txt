@@ -1,0 +1,14 @@
+-- Membuat tabel Tbl EMPLOYEE_EVA
+CREATE TABLE Tbl_EMPLOYEE_EVA (
+    IDKaryawan VARCHAR(30) PRIMARY KEY,
+    NmKaryawan VARCHAR(30),
+    TglMasukKerja DATE,
+    Usia INT(10)
+);
+
+INSERT INTO Tbl_EMPLOYEE_EVA (IDKaryawan, NmKaryawan, TglMasukKerja, Usia)
+VALUES
+    ('001', 'Andi', '2012-03-02', '25'),
+    ('002', 'Anto', '2013-06-02', '24'),
+    ('003', 'Adi', '2000-05-021', '27'),  
+    ('004', 'Amin', '2018-08-18', '31');

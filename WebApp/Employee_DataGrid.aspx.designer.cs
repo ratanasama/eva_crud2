@@ -10,7 +10,7 @@
 namespace WebApp {
     
     
-    public partial class Employee {
+    public partial class Employee_DataGrid {
         
         /// <summary>
         /// form1 control.
@@ -22,13 +22,13 @@ namespace WebApp {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Button_DataGrid control.
+        /// Button_AddEmployee control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button_DataGrid;
+        protected global::System.Web.UI.WebControls.Button Button_AddEmployee;
         
         /// <summary>
         /// Label1 control.
@@ -40,15 +40,6 @@ namespace WebApp {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// txtNama control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNama;
-        
-        /// <summary>
         /// Label2 control.
         /// </summary>
         /// <remarks>
@@ -58,13 +49,22 @@ namespace WebApp {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// txtID control.
+        /// txtNamaKaryawan control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtID;
+        protected global::System.Web.UI.WebControls.TextBox txtNamaKaryawan;
+        
+        /// <summary>
+        /// BtnSearchKaryawan control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnSearchKaryawan;
         
         /// <summary>
         /// Label3 control.
@@ -76,13 +76,49 @@ namespace WebApp {
         protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
-        /// txtUsia control.
+        /// txtUsiaKaryawan control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtUsia;
+        protected global::System.Web.UI.WebControls.TextBox txtUsiaKaryawan;
+        
+        /// <summary>
+        /// BtnSearchUsia control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnSearchUsia;
+        
+        /// <summary>
+        /// Label4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label4;
+        
+        /// <summary>
+        /// txtTanggal1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtTanggal1;
+        
+        /// <summary>
+        /// calDateTime1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Calendar calDateTime1;
         
         /// <summary>
         /// Label5 control.
@@ -94,102 +130,48 @@ namespace WebApp {
         protected global::System.Web.UI.WebControls.Label Label5;
         
         /// <summary>
-        /// txtDateTime control.
+        /// txtTanggal2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDateTime;
+        protected global::System.Web.UI.WebControls.TextBox txtTanggal2;
         
         /// <summary>
-        /// calDateTime control.
+        /// calDateTime2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar calDateTime;
+        protected global::System.Web.UI.WebControls.Calendar calDateTime2;
         
         /// <summary>
-        /// ddlDay control.
+        /// BtnSearchTanggal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlDay;
+        protected global::System.Web.UI.WebControls.Button BtnSearchTanggal;
         
         /// <summary>
-        /// ddlMonth control.
+        /// grid2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlMonth;
+        protected global::System.Web.UI.WebControls.GridView grid2;
         
         /// <summary>
-        /// ddlYear control.
+        /// Btn_Reset control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlYear;
-        
-        /// <summary>
-        /// btnSave control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSave;
-        
-        /// <summary>
-        /// btnUpdate control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnUpdate;
-        
-        /// <summary>
-        /// lblMessage control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMessage;
-        
-        /// <summary>
-        /// lblUpdate control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblUpdate;
-        
-        /// <summary>
-        /// lblID control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblID;
-        
-        /// <summary>
-        /// grid1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grid1;
+        protected global::System.Web.UI.WebControls.Button Btn_Reset;
     }
 }
